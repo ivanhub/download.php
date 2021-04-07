@@ -31,6 +31,8 @@ $dir=basename(__DIR__);
 
 // Initialize archive object
 $zip = new ZipArchive();
+
+//remove file if exists
 $failo =$dir.'.zip';
 if (file_exists($failo)) unlink($failo);
 
